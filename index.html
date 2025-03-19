@@ -13,7 +13,7 @@
         function authorizeStrava() {
             const clientId = '152606';
             const redirectUri = 'https://aicycle.pages.dev';
-            const scope = 'activity:read';
+            const scope = 'activity:read_all';
             const responseType = 'code';
             const authUrl = `https://www.strava.com/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=${responseType}&scope=${scope}`;
             window.location.href = authUrl;
