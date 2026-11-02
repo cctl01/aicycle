@@ -127,7 +127,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-02T11:18:51.091671Z",
+    "last_updated": "2026-11-02T13:14:23.449570Z",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.165"
@@ -166,17 +166,18 @@
         "status": "unavailable",
         "value": null,
         "baseline_7d": null,
-        "delta_pct": null
+        "delta_pct": null,
+        "reason": "rmssd_missing_sdnn_available"
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": null,
-        "delta_bpm": null
+        "status": "green",
+        "value": 40,
+        "baseline_7d": 41.6,
+        "delta_bpm": -1.6
       },
       "sleep": {
-        "status": "unavailable",
-        "hours": null,
+        "status": "amber",
+        "hours": 6.6,
         "quality": null
       },
       "acwr": {
@@ -197,10 +198,10 @@
       }
     },
     "signal_summary": {
-      "green": 2,
-      "amber": 0,
+      "green": 3,
+      "amber": 1,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 2
     },
     "phase_context": {
       "phase": null,
@@ -210,7 +211,7 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 2), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 3 green, 1 amber (threshold 2), 0 red.",
     "alarm_refs": []
   },
   "sleep_context": {
@@ -221,248 +222,109 @@
       "value": "Europe/Amsterdam",
       "source": "athlete_timezone"
     },
-    "source_updated_at": "2026-11-02T11:18:28.563637+00:00",
+    "source_updated_at": "2026-11-02T13:14:04.787229+00:00",
     "source": "Intervals.icu wellness.sleepSecs",
-    "status": "not_assessed",
-    "reason": "incomplete_reference",
+    "status": "assessed",
+    "reason": null,
     "confidence": "low",
     "readiness_eligible": false,
     "reference": {
       "start": "2026-09-29",
       "end": "2026-10-26",
-      "observed_nights": 0,
+      "observed_nights": 28,
       "expected_nights": 28,
       "missing_dates": [],
-      "invalid_dates": [
-        {
-          "date": "2026-09-29",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-09-30",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-01",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-02",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-03",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-04",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-05",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-06",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-07",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-08",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-09",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-10",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-11",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-12",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-13",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-14",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-15",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-16",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-17",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-18",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-19",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-20",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-21",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-22",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-23",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-24",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-25",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-26",
-          "reason": "missing_duration"
-        }
-      ],
-      "median_seconds": null,
-      "median_hours": null,
-      "median_formatted": null
+      "invalid_dates": [],
+      "median_seconds": 25904.5,
+      "median_hours": 7.2,
+      "median_formatted": "7h11m"
     },
     "recent": {
       "start": "2026-10-27",
       "end": "2026-11-02",
-      "observed_nights": 0,
+      "observed_nights": 7,
       "expected_nights": 7,
       "missing_dates": [],
-      "invalid_dates": [
-        {
-          "date": "2026-10-27",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-28",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-29",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-30",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-10-31",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-11-01",
-          "reason": "missing_duration"
-        },
-        {
-          "date": "2026-11-02",
-          "reason": "missing_duration"
-        }
-      ],
+      "invalid_dates": [],
       "nights": [
         {
           "date": "2026-10-27",
-          "sleep_seconds": null,
-          "sleep_hours": null,
-          "sleep_formatted": null,
-          "status": "invalid",
-          "reason": "missing_duration",
-          "below_reference": null
+          "sleep_seconds": 24661,
+          "sleep_hours": 6.85,
+          "sleep_formatted": "6h51m",
+          "status": "observed",
+          "reason": null,
+          "below_reference": true
         },
         {
           "date": "2026-10-28",
-          "sleep_seconds": null,
-          "sleep_hours": null,
-          "sleep_formatted": null,
-          "status": "invalid",
-          "reason": "missing_duration",
-          "below_reference": null
+          "sleep_seconds": 26581,
+          "sleep_hours": 7.38,
+          "sleep_formatted": "7h23m",
+          "status": "observed",
+          "reason": null,
+          "below_reference": false
         },
         {
           "date": "2026-10-29",
-          "sleep_seconds": null,
-          "sleep_hours": null,
-          "sleep_formatted": null,
-          "status": "invalid",
-          "reason": "missing_duration",
-          "below_reference": null
+          "sleep_seconds": 25501,
+          "sleep_hours": 7.08,
+          "sleep_formatted": "7h5m",
+          "status": "observed",
+          "reason": null,
+          "below_reference": true
         },
         {
           "date": "2026-10-30",
-          "sleep_seconds": null,
-          "sleep_hours": null,
-          "sleep_formatted": null,
-          "status": "invalid",
-          "reason": "missing_duration",
-          "below_reference": null
+          "sleep_seconds": 18510,
+          "sleep_hours": 5.14,
+          "sleep_formatted": "5h8m",
+          "status": "observed",
+          "reason": null,
+          "below_reference": true
         },
         {
           "date": "2026-10-31",
-          "sleep_seconds": null,
-          "sleep_hours": null,
-          "sleep_formatted": null,
-          "status": "invalid",
-          "reason": "missing_duration",
-          "below_reference": null
+          "sleep_seconds": 28620,
+          "sleep_hours": 7.95,
+          "sleep_formatted": "7h57m",
+          "status": "observed",
+          "reason": null,
+          "below_reference": false
         },
         {
           "date": "2026-11-01",
-          "sleep_seconds": null,
-          "sleep_hours": null,
-          "sleep_formatted": null,
-          "status": "invalid",
-          "reason": "missing_duration",
-          "below_reference": null
+          "sleep_seconds": 16380,
+          "sleep_hours": 4.55,
+          "sleep_formatted": "4h33m",
+          "status": "observed",
+          "reason": null,
+          "below_reference": true
         },
         {
           "date": "2026-11-02",
-          "sleep_seconds": null,
-          "sleep_hours": null,
-          "sleep_formatted": null,
-          "status": "invalid",
-          "reason": "missing_duration",
-          "below_reference": null
+          "sleep_seconds": 23760,
+          "sleep_hours": 6.6,
+          "sleep_formatted": "6h36m",
+          "status": "observed",
+          "reason": null,
+          "below_reference": true
         }
       ],
-      "below_reference_nights": null,
-      "mean_seconds": null,
-      "mean_hours": null,
-      "mean_formatted": null,
-      "latest_three_difference_sum_seconds": null,
-      "consecutive_observed_below_reference": null,
-      "run_formatted": null,
-      "run_dates": [],
-      "run_boundary": null
+      "below_reference_nights": 5,
+      "mean_seconds": 23430.428571428572,
+      "mean_hours": 6.51,
+      "mean_formatted": "6h30m",
+      "latest_three_difference_sum_seconds": 8953.5,
+      "consecutive_observed_below_reference": 2,
+      "run_formatted": "2",
+      "run_dates": [
+        "2026-11-01",
+        "2026-11-02"
+      ],
+      "run_boundary": "observed_not_below"
     },
-    "repeat_context": null
+    "repeat_context": false
   },
   "health_context": {
     "source_status": "ok",
@@ -564,12 +426,12 @@
           "unit": "kg"
         }
       },
-      "resting_hr": 51,
+      "resting_hr": 40,
       "hrv": null,
       "sleep_quality": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_score": null,
+      "sleep_hours": 6.6,
+      "sleep_formatted": "6h36m",
+      "sleep_score": 94.7,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -577,16 +439,16 @@
       "motivation": null,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 97.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
       "baevsky_si": null,
       "lactate": null,
-      "respiration": null,
+      "respiration": 12.5,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 1404,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -595,17 +457,30 @@
       "menstrual_phase": null,
       "menstrual_phase_predicted": null,
       "readiness": null
+    },
+    "weight": {
+      "weight_latest_kg": 62.0,
+      "weight_latest_date": "2026-10-26",
+      "wkg_current": 4.19,
+      "wkg_ftp_source": "tested",
+      "ftp_setting_date": "2026-11-02",
+      "display": {
+        "weight_latest": {
+          "value": 62.0,
+          "unit": "kg"
+        }
+      }
     }
   },
   "derived_metrics": {
     "recovery_index": null,
     "recovery_index_yesterday": null,
     "hrv_baseline_7d": null,
-    "rhr_baseline_7d": null,
+    "rhr_baseline_7d": 41.6,
     "hrv_baseline_28d": null,
-    "rhr_baseline_28d": null,
+    "rhr_baseline_28d": 40.2,
     "latest_hrv": null,
-    "latest_rhr": null,
+    "latest_rhr": 40,
     "acwr": 0.83,
     "acwr_interpretation": "optimal",
     "acwr_scope": "live_retrospective",
@@ -973,7 +848,7 @@
           "end": "2026-11-02"
         },
         "weight_kg": 62.0,
-        "weight_source": "athlete_profile",
+        "weight_source": "wellness_extended",
         "cycling": {
           "anchors": {
             "300s": {
@@ -1629,10 +1504,10 @@
     "p_max": 767,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-11-02T11:18:43.114957Z",
+    "calculation_timestamp": "2026-11-02T13:14:09.932584Z",
     "data_quality": {
       "hrv_data_points": 0,
-      "rhr_data_points": 0,
+      "rhr_data_points": 7,
       "activities_7d": 7,
       "activities_28d": 25,
       "planned_workouts_7d": 0,
@@ -5782,15 +5657,15 @@
       "display": {
         "weight": null
       },
-      "resting_hr": null,
+      "resting_hr": 41,
       "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
+      "hrv_sdnn": 56.61054,
+      "sleep_hours": 6.85,
+      "sleep_formatted": "6h51m",
       "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_score": 98.2,
       "mental_energy": null,
-      "avg_sleeping_hr": null,
+      "avg_sleeping_hr": 49.29162,
       "vo2max": null,
       "fatigue": null,
       "soreness": null,
@@ -5799,16 +5674,16 @@
       "motivation": null,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 93.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
       "baevsky_si": null,
       "lactate": null,
-      "respiration": null,
+      "respiration": 13.0,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 4918,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -5824,15 +5699,15 @@
       "display": {
         "weight": null
       },
-      "resting_hr": null,
+      "resting_hr": 46,
       "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
+      "hrv_sdnn": 83.30068,
+      "sleep_hours": 7.38,
+      "sleep_formatted": "7h23m",
       "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_score": 94.5,
       "mental_energy": null,
-      "avg_sleeping_hr": null,
+      "avg_sleeping_hr": 52.548103,
       "vo2max": null,
       "fatigue": null,
       "soreness": null,
@@ -5841,16 +5716,16 @@
       "motivation": null,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 95.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
       "baevsky_si": null,
       "lactate": null,
-      "respiration": null,
+      "respiration": 13.0,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 4358,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -5866,15 +5741,15 @@
       "display": {
         "weight": null
       },
-      "resting_hr": null,
+      "resting_hr": 40,
       "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
+      "hrv_sdnn": 61.84308,
+      "sleep_hours": 7.08,
+      "sleep_formatted": "7h5m",
       "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_score": 92.0,
       "mental_energy": null,
-      "avg_sleeping_hr": null,
+      "avg_sleeping_hr": 47.197464,
       "vo2max": null,
       "fatigue": null,
       "soreness": null,
@@ -5883,16 +5758,16 @@
       "motivation": null,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 95.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
       "baevsky_si": null,
       "lactate": null,
-      "respiration": null,
+      "respiration": 11.5,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 4886,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -5908,15 +5783,15 @@
       "display": {
         "weight": null
       },
-      "resting_hr": null,
+      "resting_hr": 43,
       "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
+      "hrv_sdnn": 81.03268,
+      "sleep_hours": 5.14,
+      "sleep_formatted": "5h8m",
       "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_score": 78.7,
       "mental_energy": null,
-      "avg_sleeping_hr": null,
+      "avg_sleeping_hr": 52.12235,
       "vo2max": null,
       "fatigue": null,
       "soreness": null,
@@ -5925,16 +5800,16 @@
       "motivation": null,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 97.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
       "baevsky_si": null,
       "lactate": null,
-      "respiration": null,
+      "respiration": 13.0,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 8846,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -5950,16 +5825,16 @@
       "display": {
         "weight": null
       },
-      "resting_hr": null,
+      "resting_hr": 40,
       "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
+      "hrv_sdnn": 70.67608,
+      "sleep_hours": 7.95,
+      "sleep_formatted": "7h57m",
       "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_score": 99.5,
       "mental_energy": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null,
+      "avg_sleeping_hr": 50.05966,
+      "vo2max": 50.28,
       "fatigue": null,
       "soreness": null,
       "stress": null,
@@ -5967,16 +5842,16 @@
       "motivation": null,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 98.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
       "baevsky_si": null,
       "lactate": null,
-      "respiration": null,
+      "respiration": 14.0,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 11119,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -5992,15 +5867,15 @@
       "display": {
         "weight": null
       },
-      "resting_hr": null,
+      "resting_hr": 41,
       "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
+      "hrv_sdnn": 75.32852,
+      "sleep_hours": 4.55,
+      "sleep_formatted": "4h33m",
       "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_score": 46.1,
       "mental_energy": null,
-      "avg_sleeping_hr": null,
+      "avg_sleeping_hr": 49.82922,
       "vo2max": null,
       "fatigue": null,
       "soreness": null,
@@ -6009,16 +5884,16 @@
       "motivation": null,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 99.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
       "baevsky_si": null,
       "lactate": null,
-      "respiration": null,
+      "respiration": 17.0,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 9129,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -6034,15 +5909,15 @@
       "display": {
         "weight": null
       },
-      "resting_hr": null,
+      "resting_hr": 40,
       "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
+      "hrv_sdnn": 70.50977,
+      "sleep_hours": 6.6,
+      "sleep_formatted": "6h36m",
       "sleep_quality": null,
-      "sleep_score": null,
+      "sleep_score": 94.7,
       "mental_energy": null,
-      "avg_sleeping_hr": null,
+      "avg_sleeping_hr": 50.948853,
       "vo2max": null,
       "fatigue": null,
       "soreness": null,
@@ -6051,16 +5926,16 @@
       "motivation": null,
       "injury": null,
       "hydration": null,
-      "spO2": null,
+      "spO2": 97.0,
       "blood_glucose": null,
       "systolic": null,
       "diastolic": null,
       "baevsky_si": null,
       "lactate": null,
-      "respiration": null,
+      "respiration": 12.5,
       "body_fat_pct": null,
       "abdomen_cm": null,
-      "steps": null,
+      "steps": 1404,
       "hydration_volume_l": null,
       "kcal_consumed": null,
       "carbohydrates_g": null,
@@ -6087,7 +5962,7 @@
     "total_tss": 176,
     "activities_count": 7,
     "avg_hrv": null,
-    "avg_resting_hr": null
+    "avg_resting_hr": 41.6
   },
   "race_calendar": {
     "next_race": null,
@@ -6267,16 +6142,16 @@
           "days": 0
         },
         "resting_hr": {
-          "avg": null,
-          "min": null,
-          "max": null,
-          "days": 0
+          "avg": 41.57,
+          "min": 40.0,
+          "max": 46.0,
+          "days": 7
         },
         "sleep_hours": {
-          "avg": null,
-          "min": null,
-          "max": null,
-          "days": 0
+          "avg": 6.51,
+          "min": 4.55,
+          "max": 7.95,
+          "days": 7
         },
         "sleep_quality": {
           "avg": null,
@@ -6305,12 +6180,12 @@
       "hrrc_mean": 25.3,
       "hrrc_qualifying": 3,
       "avg_hrv": null,
-      "avg_resting_hr": null,
-      "avg_sleep_hours": null,
+      "avg_resting_hr": 41.6,
+      "avg_sleep_hours": 6.51,
       "wellness_days": {
         "hrv": 0,
-        "resting_hr": 0,
-        "sleep": 0
+        "resting_hr": 7,
+        "sleep": 7
       },
       "ctl_end": 38.95,
       "fun_facts": {
@@ -6556,16 +6431,16 @@
           "days": 0
         },
         "resting_hr": {
-          "avg": null,
-          "min": null,
-          "max": null,
-          "days": 0
+          "avg": 42.14,
+          "min": 39.0,
+          "max": 44.0,
+          "days": 7
         },
         "sleep_hours": {
-          "avg": null,
-          "min": null,
-          "max": null,
-          "days": 0
+          "avg": 7.18,
+          "min": 6.241388888888889,
+          "max": 8.358333333333333,
+          "days": 7
         },
         "sleep_quality": {
           "avg": null,
@@ -6574,16 +6449,22 @@
           "days": 0
         },
         "weight_kg": {
-          "avg": null,
-          "min": null,
-          "max": null,
-          "days": 0,
-          "latest": null,
-          "latest_date": null
+          "avg": 62.0,
+          "min": 62.0,
+          "max": 62.0,
+          "days": 4,
+          "latest": 62.0,
+          "latest_date": "2026-10-26"
         },
         "weight_display": {
-          "avg": null,
-          "latest": null
+          "avg": {
+            "value": 62.0,
+            "unit": "kg"
+          },
+          "latest": {
+            "value": 62.0,
+            "unit": "kg"
+          }
         }
       },
       "durability_mean": null,
@@ -6594,12 +6475,12 @@
       "hrrc_mean": 39.0,
       "hrrc_qualifying": 1,
       "avg_hrv": null,
-      "avg_resting_hr": null,
-      "avg_sleep_hours": null,
+      "avg_resting_hr": 42.1,
+      "avg_sleep_hours": 7.18,
       "wellness_days": {
         "hrv": 0,
-        "resting_hr": 0,
-        "sleep": 0
+        "resting_hr": 7,
+        "sleep": 7
       },
       "ctl_end": 40.675343,
       "fun_facts": {
@@ -6883,16 +6764,16 @@
           "days": 0
         },
         "resting_hr": {
-          "avg": null,
-          "min": null,
-          "max": null,
-          "days": 0
+          "avg": 38.57,
+          "min": 36.0,
+          "max": 42.0,
+          "days": 7
         },
         "sleep_hours": {
-          "avg": null,
-          "min": null,
-          "max": null,
-          "days": 0
+          "avg": 6.67,
+          "min": 6.0,
+          "max": 7.366666666666666,
+          "days": 7
         },
         "sleep_quality": {
           "avg": null,
@@ -6901,16 +6782,22 @@
           "days": 0
         },
         "weight_kg": {
-          "avg": null,
-          "min": null,
-          "max": null,
-          "days": 0,
-          "latest": null,
-          "latest_date": null
+          "avg": 62.0,
+          "min": 62.0,
+          "max": 62.0,
+          "days": 4,
+          "latest": 62.0,
+          "latest_date": "2026-10-19"
         },
         "weight_display": {
-          "avg": null,
-          "latest": null
+          "avg": {
+            "value": 62.0,
+            "unit": "kg"
+          },
+          "latest": {
+            "value": 62.0,
+            "unit": "kg"
+          }
         }
       },
       "durability_mean": null,
@@ -6921,12 +6808,12 @@
       "hrrc_mean": 35.5,
       "hrrc_qualifying": 2,
       "avg_hrv": null,
-      "avg_resting_hr": null,
-      "avg_sleep_hours": null,
+      "avg_resting_hr": 38.6,
+      "avg_sleep_hours": 6.67,
       "wellness_days": {
         "hrv": 0,
-        "resting_hr": 0,
-        "sleep": 0
+        "resting_hr": 7,
+        "sleep": 7
       },
       "ctl_end": 42.988308,
       "fun_facts": {
@@ -7282,16 +7169,16 @@
           "days": 0
         },
         "resting_hr": {
-          "avg": null,
-          "min": null,
-          "max": null,
-          "days": 0
+          "avg": 38.57,
+          "min": 36.0,
+          "max": 40.0,
+          "days": 7
         },
         "sleep_hours": {
-          "avg": null,
-          "min": null,
-          "max": null,
-          "days": 0
+          "avg": 6.78,
+          "min": 4.683333333333334,
+          "max": 8.100277777777778,
+          "days": 7
         },
         "sleep_quality": {
           "avg": null,
@@ -7300,16 +7187,22 @@
           "days": 0
         },
         "weight_kg": {
-          "avg": null,
-          "min": null,
-          "max": null,
-          "days": 0,
-          "latest": null,
-          "latest_date": null
+          "avg": 62.0,
+          "min": 62.0,
+          "max": 62.0,
+          "days": 3,
+          "latest": 62.0,
+          "latest_date": "2026-10-10"
         },
         "weight_display": {
-          "avg": null,
-          "latest": null
+          "avg": {
+            "value": 62.0,
+            "unit": "kg"
+          },
+          "latest": {
+            "value": 62.0,
+            "unit": "kg"
+          }
         }
       },
       "durability_mean": null,
@@ -7320,12 +7213,12 @@
       "hrrc_mean": 27.5,
       "hrrc_qualifying": 4,
       "avg_hrv": null,
-      "avg_resting_hr": null,
-      "avg_sleep_hours": null,
+      "avg_resting_hr": 38.6,
+      "avg_sleep_hours": 6.78,
       "wellness_days": {
         "hrv": 0,
-        "resting_hr": 0,
-        "sleep": 0
+        "resting_hr": 7,
+        "sleep": 7
       },
       "ctl_end": 45.827503,
       "fun_facts": {
@@ -7429,16 +7322,16 @@
       "days": 0
     },
     "resting_hr": {
-      "avg": null,
-      "min": null,
-      "max": null,
-      "days": 0
+      "avg": 40.21,
+      "min": 36.0,
+      "max": 46.0,
+      "days": 28
     },
     "sleep_hours": {
-      "avg": null,
-      "min": null,
-      "max": null,
-      "days": 0
+      "avg": 6.79,
+      "min": 4.55,
+      "max": 8.358333333333333,
+      "days": 28
     },
     "sleep_quality": {
       "avg": null,
@@ -7447,16 +7340,22 @@
       "days": 0
     },
     "weight_kg": {
-      "avg": null,
-      "min": null,
-      "max": null,
-      "days": 0,
-      "latest": null,
-      "latest_date": null
+      "avg": 62.0,
+      "min": 62.0,
+      "max": 62.0,
+      "days": 11,
+      "latest": 62.0,
+      "latest_date": "2026-10-26"
     },
     "weight_display": {
-      "avg": null,
-      "latest": null
+      "avg": {
+        "value": 62.0,
+        "unit": "kg"
+      },
+      "latest": {
+        "value": 62.0,
+        "unit": "kg"
+      }
     }
   },
   "fun_facts": {
@@ -7710,22 +7609,22 @@
   },
   "source_freshness": {
     "version": 1,
-    "as_of": "2026-11-02T11:18:51.027630Z",
+    "as_of": "2026-11-02T13:14:23.364889Z",
     "budget": {
       "scope": "local_data_folder_key_athlete",
       "capacity_status": "known",
       "utc_day": "2026-11-02",
-      "requests_this_run": 46,
-      "requests_today": 160,
-      "sync_requests_today": 160,
+      "requests_this_run": 39,
+      "requests_today": 199,
+      "sync_requests_today": 199,
       "provider_daily_limit": 8000,
       "sync_daily_limit": 7000,
       "reserved_external": 1000,
-      "sync_remaining": 6840,
-      "window_requests": 160,
+      "sync_remaining": 6801,
+      "window_requests": 39,
       "window_limit": 200,
       "hold_until": null,
-      "next_eligible_at": "2026-11-02T11:19:27.932642Z"
+      "next_eligible_at": "2026-11-02T13:15:03.645886Z"
     },
     "schedule": {
       "requested_interval_seconds": 60,
@@ -7739,7 +7638,7 @@
         "code": "source_stale",
         "message": "Sources need refresh: activity_decoupling, activity_power, activity_streams.",
         "since": "2026-11-02T11:11:23.233612Z",
-        "next_eligible_at": "2026-11-02T11:19:27.932642Z"
+        "next_eligible_at": "2026-11-02T13:15:03.645886Z"
       }
     ],
     "sources": {
@@ -7747,13 +7646,13 @@
         "status": "fresh",
         "reason": null,
         "snapshot_present": true,
-        "last_attempt_at": "2026-11-02T11:18:28.044987Z",
-        "last_success_at": "2026-11-02T11:18:28.044890Z",
-        "source_acquired_at": "2026-11-02T11:18:28.044890Z",
-        "age_seconds": 22.9827401638031,
+        "last_attempt_at": "2026-11-02T13:14:04.284342Z",
+        "last_success_at": "2026-11-02T13:14:04.284165Z",
+        "source_acquired_at": "2026-11-02T13:14:04.284165Z",
+        "age_seconds": 19.080724239349365,
         "max_age_seconds": 60,
-        "next_due_at": "2026-11-02T11:19:28.044890Z",
-        "next_eligible_at": "2026-11-02T11:19:28.044890Z",
+        "next_due_at": "2026-11-02T13:15:04.284165Z",
+        "next_eligible_at": "2026-11-02T13:15:04.284165Z",
         "coverage": "complete",
         "scope": {
           "oldest": "2026-09-08",
@@ -7765,13 +7664,13 @@
         "status": "fresh",
         "reason": null,
         "snapshot_present": true,
-        "last_attempt_at": "2026-11-02T11:18:28.563676Z",
-        "last_success_at": "2026-11-02T11:18:28.563637Z",
-        "source_acquired_at": "2026-11-02T11:18:28.563637Z",
-        "age_seconds": 22.463993072509766,
+        "last_attempt_at": "2026-11-02T13:14:04.787249Z",
+        "last_success_at": "2026-11-02T13:14:04.787229Z",
+        "source_acquired_at": "2026-11-02T13:14:04.787229Z",
+        "age_seconds": 18.577660083770752,
         "max_age_seconds": 60,
-        "next_due_at": "2026-11-02T11:19:28.563637Z",
-        "next_eligible_at": "2026-11-02T11:19:28.563637Z",
+        "next_due_at": "2026-11-02T13:15:04.787229Z",
+        "next_eligible_at": "2026-11-02T13:15:04.787229Z",
         "coverage": "complete",
         "scope": {
           "oldest": "2026-09-29",
@@ -7783,13 +7682,13 @@
         "status": "fresh",
         "reason": null,
         "snapshot_present": true,
-        "last_attempt_at": "2026-11-02T11:18:29.046625Z",
-        "last_success_at": "2026-11-02T11:18:29.046611Z",
-        "source_acquired_at": "2026-11-02T11:18:29.046611Z",
-        "age_seconds": 21.981019020080566,
+        "last_attempt_at": "2026-11-02T13:14:05.283863Z",
+        "last_success_at": "2026-11-02T13:14:05.283859Z",
+        "source_acquired_at": "2026-11-02T13:14:05.283859Z",
+        "age_seconds": 18.081030130386353,
         "max_age_seconds": 60,
-        "next_due_at": "2026-11-02T11:19:29.046611Z",
-        "next_eligible_at": "2026-11-02T11:19:29.046611Z",
+        "next_due_at": "2026-11-02T13:15:05.283859Z",
+        "next_eligible_at": "2026-11-02T13:15:05.283859Z",
         "coverage": "complete",
         "scope": {
           "oldest": "2026-10-06",
@@ -7802,13 +7701,13 @@
         "status": "fresh",
         "reason": null,
         "snapshot_present": true,
-        "last_attempt_at": "2026-11-02T11:18:29.551836Z",
-        "last_success_at": "2026-11-02T11:18:29.551823Z",
-        "source_acquired_at": "2026-11-02T11:18:29.551823Z",
-        "age_seconds": 21.475807189941406,
+        "last_attempt_at": "2026-11-02T13:14:05.790694Z",
+        "last_success_at": "2026-11-02T13:14:05.790678Z",
+        "source_acquired_at": "2026-11-02T13:14:05.790678Z",
+        "age_seconds": 17.57421112060547,
         "max_age_seconds": 60,
-        "next_due_at": "2026-11-02T11:19:29.551823Z",
-        "next_eligible_at": "2026-11-02T11:19:29.551823Z",
+        "next_due_at": "2026-11-02T13:15:05.790678Z",
+        "next_eligible_at": "2026-11-02T13:15:05.790678Z",
         "coverage": "complete",
         "scope": {
           "oldest": "2025-11-02",
@@ -7821,13 +7720,13 @@
         "status": "fresh",
         "reason": null,
         "snapshot_present": true,
-        "last_attempt_at": "2026-11-02T11:10:51.094743Z",
-        "last_success_at": "2026-11-02T11:10:51.094733Z",
-        "source_acquired_at": "2026-11-02T11:10:51.094733Z",
-        "age_seconds": 479.93289709091187,
+        "last_attempt_at": "2026-11-02T13:14:03.770224Z",
+        "last_success_at": "2026-11-02T13:14:03.770220Z",
+        "source_acquired_at": "2026-11-02T13:14:03.770220Z",
+        "age_seconds": 19.594669103622437,
         "max_age_seconds": 3600,
-        "next_due_at": "2026-11-02T12:10:51.094733Z",
-        "next_eligible_at": "2026-11-02T12:10:51.094733Z",
+        "next_due_at": "2026-11-02T14:14:03.770220Z",
+        "next_eligible_at": "2026-11-02T14:14:03.770220Z",
         "coverage": "complete",
         "scope": {
           "resource": ""
@@ -7837,13 +7736,13 @@
         "status": "fresh",
         "reason": null,
         "snapshot_present": true,
-        "last_attempt_at": "2026-11-02T11:11:11.457015Z",
-        "last_success_at": "2026-11-02T11:10:54.678303Z",
-        "source_acquired_at": "2026-11-02T11:10:54.678303Z",
-        "age_seconds": 476.34932708740234,
+        "last_attempt_at": "2026-11-02T13:14:11.924063Z",
+        "last_success_at": "2026-11-02T13:14:06.309106Z",
+        "source_acquired_at": "2026-11-02T13:14:06.309106Z",
+        "age_seconds": 17.05578303337097,
         "max_age_seconds": 21600,
-        "next_due_at": "2026-11-02T17:10:54.678303Z",
-        "next_eligible_at": "2026-11-02T17:10:54.678303Z",
+        "next_due_at": "2026-11-02T19:14:06.309106Z",
+        "next_eligible_at": "2026-11-02T19:14:06.309106Z",
         "coverage": "complete",
         "scope": {
           "resources": [
@@ -7907,10 +7806,10 @@
         "status": "fresh",
         "reason": null,
         "snapshot_present": true,
-        "last_attempt_at": "2026-11-02T11:11:14.975790Z",
+        "last_attempt_at": "2026-11-02T13:14:14.943180Z",
         "last_success_at": "2026-11-02T11:11:11.935412Z",
         "source_acquired_at": "2026-11-02T11:11:11.935412Z",
-        "age_seconds": 459.0922181606293,
+        "age_seconds": 7391.429477214813,
         "max_age_seconds": 21600,
         "next_due_at": "2026-11-02T17:11:11.935412Z",
         "next_eligible_at": "2026-11-02T17:11:11.935412Z",
@@ -7948,10 +7847,10 @@
         "last_attempt_at": "2026-11-02T11:18:43.066315Z",
         "last_success_at": "2026-11-02T11:18:31.093483Z",
         "source_acquired_at": "2026-11-02T11:18:31.093483Z",
-        "age_seconds": 19.934147119522095,
+        "age_seconds": 6952.271406173706,
         "max_age_seconds": null,
         "next_due_at": null,
-        "next_eligible_at": "2026-11-02T11:18:51.028139Z",
+        "next_eligible_at": "2026-11-02T13:14:23.365341Z",
         "coverage": "complete",
         "scope": {
           "resources": [
@@ -7998,16 +7897,19 @@
         "status": "unavailable",
         "reason": "refresh_failed",
         "snapshot_present": true,
-        "last_attempt_at": "2026-11-02T11:18:42.309907Z",
+        "last_attempt_at": "2026-11-02T13:14:09.874449Z",
         "last_success_at": "2026-11-02T11:18:31.603858Z",
         "source_acquired_at": "2026-11-02T11:18:31.603858Z",
-        "age_seconds": 19.42377209663391,
+        "age_seconds": 6951.761031150818,
         "max_age_seconds": null,
         "next_due_at": null,
-        "next_eligible_at": "2026-11-02T11:18:51.028191Z",
+        "next_eligible_at": "2026-11-02T13:14:23.365397Z",
         "coverage": "partial",
         "scope": {
           "resources": [
+            {
+              "resource": "activity_streams/20802294908"
+            },
             {
               "resource": "activity_streams/i203334749"
             },
@@ -8039,9 +7941,6 @@
               "resource": "activity_streams/i200483315"
             },
             {
-              "resource": "activity_streams/20802294908"
-            },
-            {
               "resource": "activity_streams/20672699073"
             }
           ]
@@ -8051,13 +7950,13 @@
         "status": "unavailable",
         "reason": null,
         "snapshot_present": true,
-        "last_attempt_at": "2026-11-02T11:18:46.910966Z",
-        "last_success_at": "2026-11-02T11:18:43.355800Z",
-        "source_acquired_at": "2026-11-02T11:18:43.355800Z",
-        "age_seconds": 7.671830177307129,
+        "last_attempt_at": "2026-11-02T13:14:19.012747Z",
+        "last_success_at": "2026-11-02T13:14:15.456983Z",
+        "source_acquired_at": "2026-11-02T13:14:15.456983Z",
+        "age_seconds": 7.9079060554504395,
         "max_age_seconds": null,
         "next_due_at": null,
-        "next_eligible_at": "2026-11-02T11:18:51.028240Z",
+        "next_eligible_at": "2026-11-02T13:14:23.365450Z",
         "coverage": "partial",
         "scope": {
           "resources": [
@@ -8134,13 +8033,13 @@
         "status": "unavailable",
         "reason": "refresh_failed",
         "snapshot_present": true,
-        "last_attempt_at": "2026-11-02T11:18:50.984078Z",
-        "last_success_at": "2026-11-02T11:18:47.404535Z",
-        "source_acquired_at": "2026-11-02T11:18:47.404535Z",
-        "age_seconds": 3.6230950355529785,
+        "last_attempt_at": "2026-11-02T13:14:23.313400Z",
+        "last_success_at": "2026-11-02T13:14:19.544091Z",
+        "source_acquired_at": "2026-11-02T13:14:19.544091Z",
+        "age_seconds": 3.82079815864563,
         "max_age_seconds": null,
         "next_due_at": null,
-        "next_eligible_at": "2026-11-02T11:18:51.028292Z",
+        "next_eligible_at": "2026-11-02T13:14:23.365510Z",
         "coverage": "partial",
         "scope": {
           "resources": [
@@ -8252,7 +8151,7 @@
         "last_attempt_at": "2026-11-02T11:18:29.582263Z",
         "last_success_at": "2026-11-02T11:18:29.582263Z",
         "source_acquired_at": "2026-11-02T11:18:29.582263Z",
-        "age_seconds": 21.445367097854614,
+        "age_seconds": 6953.782626152039,
         "max_age_seconds": 21600,
         "next_due_at": "2026-11-02T17:18:29.582263Z",
         "next_eligible_at": "2026-11-02T17:18:29.582263Z",
@@ -8268,7 +8167,7 @@
         "last_attempt_at": null,
         "last_success_at": "2026-11-02T11:10:40.343929Z",
         "source_acquired_at": "2026-11-02T11:10:40.343929Z",
-        "age_seconds": 490.6837010383606,
+        "age_seconds": 7423.020960092545,
         "max_age_seconds": 2505600,
         "next_due_at": "2026-12-01T11:10:40.343929Z",
         "next_eligible_at": "2026-12-01T11:10:40.343929Z",
@@ -8281,7 +8180,7 @@
   },
   "export_freshness": {
     "version": 1,
-    "generated_at": "2026-11-02T11:18:51.091671Z",
+    "generated_at": "2026-11-02T13:14:23.449570Z",
     "mode": "unknown",
     "expected_update_by": null,
     "reason": "unknown_schedule"
